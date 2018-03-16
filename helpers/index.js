@@ -4,6 +4,7 @@ const Promise = require('bluebird')
 const { MongoClient } = require('mongodb')
 
 /* DATABASES */
+const FAST_STATS_URI = 'mongodb://mongodb-test:27017/fast-stats-test'
 const STATS_URI = 'mongodb://mongodb-test:27017/stats-test'
 const MAIN_URI = 'mongodb://mongodb-test:27017/reelevant-test'
 
@@ -15,8 +16,10 @@ const clearDatabaseFactory = (uri) => () => Promise.using((getConnexionFactory(u
   return db.collections().map((col) => col.deleteMany({}))
 })
 
+const getFastStatsConnexion = getConnexionFactory(FAST_STATS_URI)
 const getStatsConnexion = getConnexionFactory(STATS_URI)
 const getMainConnexion = getConnexionFactory(MAIN_URI)
+const clearFastStatsDatabase = clearDatabaseFactory(FAST_STATS_URI)
 const clearStatsDatabase = clearDatabaseFactory(STATS_URI)
 const clearMainDatabase = clearDatabaseFactory(MAIN_URI)
 
@@ -33,8 +36,10 @@ function binaryParser (res, callback) {
 }
 
 module.exports = {
+  getFastStatsConnexion,
   getStatsConnexion,
   getMainConnexion,
+  clearFastStatsDatabase,
   clearStatsDatabase,
   clearMainDatabase,
   binaryParser
