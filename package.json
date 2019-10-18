@@ -19,7 +19,7 @@
     "lodash": "4.17.4",
     "mongodb": "2.2.26",
     "nodemon": "1.11.0",
-    "supertest": "3.0.0",
+    "supertest": "4.0.2",
     "tape": "4.6.3",
     "tmp": "0.0.31"
   },
