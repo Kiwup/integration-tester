@@ -21,7 +21,7 @@
     "nodemon": "1.11.0",
     "supertest": "3.0.0",
     "tape": "4.6.3",
-    "tmp": "0.0.31"
+    "tmp": "0.1.0"
   },
   "devDependencies": {
     "standard": "10.0.2"
