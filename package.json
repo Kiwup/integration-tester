@@ -20,7 +20,7 @@
     "mongodb": "2.2.26",
     "nodemon": "1.11.0",
     "supertest": "3.0.0",
-    "tape": "4.6.3",
+    "tape": "4.11.0",
     "tmp": "0.0.31"
   },
   "devDependencies": {
