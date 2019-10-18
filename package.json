@@ -18,7 +18,7 @@
     "ioredis": "2.5.0",
     "lodash": "4.17.4",
     "mongodb": "2.2.26",
-    "nodemon": "1.11.0",
+    "nodemon": "1.19.4",
     "supertest": "3.0.0",
     "tape": "4.6.3",
     "tmp": "0.0.31"
