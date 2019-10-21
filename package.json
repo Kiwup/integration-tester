@@ -16,7 +16,7 @@
     "express": "4.15.2",
     "gm": "1.23.0",
     "ioredis": "2.5.0",
-    "lodash": "4.17.4",
+    "lodash": "4.17.15",
     "mongodb": "2.2.26",
     "nodemon": "1.11.0",
     "supertest": "3.0.0",
